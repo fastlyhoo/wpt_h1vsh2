@@ -20,7 +20,7 @@ WPT_KEY = None
 Once configured with the right host and location (and API key, if necessary), the test will prompt the user for test parameters:
 
 ```
-$ python wpt_h1vsh2.private.py
+$ python wpt_h1vsh2.py
 Bandwidth down in Kbps[5000]:
 Bandwidth up in Kbps[1000]:
 latency in msec[40]:
