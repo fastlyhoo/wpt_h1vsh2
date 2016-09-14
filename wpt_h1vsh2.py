@@ -123,7 +123,7 @@ def fetch_results(test_ids):
 
 
 def get_plot_dict(results):
-    # convert results dictionary to a dictionary that can be easily consumed by pyplot
+    # convert results dictionary to a dictionary that can be easily consumed by write_pdf function
     plot_dict = {}
     for protocol, runs in results.iteritems():
         for run, metric_values in runs.iteritems():
@@ -197,12 +197,13 @@ def main():
     check_test_status(test_ids)
     results = fetch_results(test_ids)
 
-    # plot results
+    # plot results and create PDF file
     print "preparing PDF file..."
     plot_dict = get_plot_dict(results)
     write_pdf(output_pdf_file, plot_dict)
     print "PDF file created"
 
+    #WPT URLs for video comparison and scatter plots
     wpt_graph_url, wpt_video_url = get_wpt_result_urls(test_ids)
     print "WPT result URLs"
     print "==============="
