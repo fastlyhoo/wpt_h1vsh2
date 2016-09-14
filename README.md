@@ -21,6 +21,7 @@ WPT_KEY = None
 Once configured with the right host and location (and API key, if necessary), the test will prompt the user for test parameters:
 
 ```
+$python wpt_h1vsh2.private.py
 Bandwidth down in Kbps[5000]:
 Bandwidth up in Kbps[1000]:
 latency in msec[40]:
@@ -35,7 +36,9 @@ Name of output pdf file[wpt_output.pdf]:
 The output of the test is a PDF file with scatter plots of all core metrics.  The default metrics collected are stored in the global `METRICS` parameter:
 
 ```python
-METRICS = ['render', 'firstPaint', 'domContentLoadedEventStart', 'domContentLoadedEventEnd', 'lastVisualChange', 'visualComplete', 'docTime', 'loadTime', 'fullyLoaded', 'SpeedIndex', 'bytesOutDoc', 'bytesOut', 'bytesInDoc', 'bytesIn', 'effectiveBpsDoc', 'effectiveBps']
+METRICS = ['render', 'firstPaint', 'domContentLoadedEventStart', 'domContentLoadedEventEnd',
+  'lastVisualChange', 'visualComplete', 'docTime', 'loadTime', 'fullyLoaded', 'SpeedIndex',
+  'bytesOutDoc', 'bytesOut', 'bytesInDoc', 'bytesIn', 'effectiveBpsDoc', 'effectiveBps']
 ```
 
 The script will also output URLs pointing to webepagetests's video comparison and metrics comparison plot reports.
