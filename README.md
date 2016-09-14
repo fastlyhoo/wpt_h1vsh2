@@ -20,7 +20,7 @@ WPT_KEY = None
 Once configured with the right host and location (and API key, if necessary), the test will prompt the user for test parameters:
 
 ```
-$python wpt_h1vsh2.private.py
+$ python wpt_h1vsh2.private.py
 Bandwidth down in Kbps[5000]:
 Bandwidth up in Kbps[1000]:
 latency in msec[40]:
@@ -40,9 +40,9 @@ METRICS = ['render', 'firstPaint', 'domContentLoadedEventStart', 'domContentLoad
   'bytesOutDoc', 'bytesOut', 'bytesInDoc', 'bytesIn', 'effectiveBpsDoc', 'effectiveBps']
 ```
 
-The script will also output URLs pointing to webepagetests's video comparison and metrics comparison plot reports.
+The script will also output URLs pointing to webepagetest's video comparison and metrics comparison plot reports.
 
-Outside of catching some very basic errors, here's not a lot of error checking or validation.
+Outside of catching some very basic errors, there's not a lot of error checking or validation.
 
 ## Requirements
 See `requirements.txt` file
