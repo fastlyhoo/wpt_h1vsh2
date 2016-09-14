@@ -1,8 +1,7 @@
 # wpt_h1vsh2
-Simple script to use webpagetest to compare performance of a page with HTTP/1.1 and HTTP/2
 This is a simple script which uses [webpagetest](https://www.webpagetest.org/) to compare core performance metrics of a page with HTTP/1.1 and HTTP/2. The script will default to using public webpagetest ([API key needed](https://www.webpagetest.org/getkey.php)), but can be configured to use a [private instance](https://sites.google.com/a/webpagetest.org/docs/private-instances). 
 
-Private instances are recommended since they can perform tests with many runs.
+Private instances are recommended since they can perform tests with many runs (public webpagetest limits each test to 9 runs).
 
 ## Instructions
 The script needs global variables that define the webpagetest host and the location to test from.  If using public webpagetest, the API key will also be necessary:
