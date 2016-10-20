@@ -51,13 +51,13 @@ See `requirements.txt` file
 
 1. https://raw.githubusercontent.com/fastlyhoo/wpt_h1vsh2/master/wpt_h1vsh2.py
 2. Add a snippet to the VERY beginning (line 1) of the script since you're not running a window manager (X11) and matlabplot will error on you because it assumes you are
-```
-############## BEGIN SERVER-COMPATIBILITY BLOCK ############
-# Add this to the beginning of wpt_h1vsh2.py to use it on a server (without X11)
-import matplotlib
-matplotlib.use('Agg')
-############## END SERVER-COMPATIBILITY BLOCK ##############
-```
+  ```
+  ############## BEGIN SERVER-COMPATIBILITY BLOCK ############
+  # Add this to the beginning of wpt_h1vsh2.py to use it on a server (without X11)
+  import matplotlib
+  matplotlib.use('Agg')
+  ############## END SERVER-COMPATIBILITY BLOCK ##############
+  ```
 3. apt-get install python-pip python-tk
 4. pip install -U pip setuptools
 5. pip install matplotlib requests seaborn
