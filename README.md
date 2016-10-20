@@ -49,7 +49,7 @@ See `requirements.txt` file
 
 ## Example usage on Ubuntu 16.04 Server (No X11)
 
-1. https://raw.githubusercontent.com/fastlyhoo/wpt_h1vsh2/master/wpt_h1vsh2.py
+1. Run **wget https://raw.githubusercontent.com/fastlyhoo/wpt_h1vsh2/master/wpt_h1vsh2.py**
 2. Add a snippet to the VERY beginning (line 1) of the script since you're not running a window manager (X11) and matlabplot will error on you because it assumes you are
 
         ############## BEGIN SERVER-COMPATIBILITY BLOCK ############
